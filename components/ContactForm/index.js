@@ -42,6 +42,7 @@ const ContactForm = () => {
 
     /* Handle contact form submissions */
     const handleSubmit = async e => {
+        console.log('submitting')
         /* Stop reload, change sending state, sort vars into obj */
         e.preventDefault()
         setSendingTo(true)

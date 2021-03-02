@@ -1,6 +1,18 @@
 import Image from 'next/image'
+import { useEffect } from 'react'
+import AOS from 'aos'
+
+import * as Scroll from 'react-scroll'
+let ScrollLink = Scroll.Link
 
 const TitleCard = () => {
+
+    useEffect(()=>{
+        AOS.init({
+          duration: 600
+        })
+      },[])
+
     return (
         <header className="flex flex-row flex-wrap flex-center full-width bg-dark text-white">
             <div className="circle image" data-aos="fade-up">    
@@ -28,12 +40,14 @@ const TitleCard = () => {
                     >
                         Sign up for a reminder
                     </button>
-                    <button 
-                        className="btn btn-secondary"
-                        tabIndex={2}
-                    >
-                        Contact Johann
-                    </button>
+                    <ScrollLink to="contact" spy={true} smooth={true} offset={-50} duration={1000} delay={100}>
+                        <button 
+                            className="btn btn-secondary"
+                            tabIndex={2}
+                            >
+                            Contact Johann
+                        </button>
+                    </ScrollLink>
                 </div>
 
             </div>

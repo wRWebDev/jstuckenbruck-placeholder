@@ -12,14 +12,15 @@ const emphasise = string =>
 
 const Biography = ({ biography }) => {
 
+
     const { quotes, body } = biography
     const paragraphs = body.split('\n\n')
     const quote = p => <>
-        <div className="quote" data-aos="fade-left">
+        <div className="quote" data-aos="fade-left" key={nanoid()}>
             {quotes[0].quote}
             <h5>{`- ${quotes[0].source}`}</h5>
         </div>
-        <p>
+        <p key={nanoid()}>
             {bolden(emphasise(p))}
         </p>
     </>

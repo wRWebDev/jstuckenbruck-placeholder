@@ -1,16 +1,9 @@
 import firebase from '../db/firebase'
-import { useEffect } from 'react'
-import AOS from 'aos'
 import Headers from '../components/Headers'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
 const Page = ({ biography }) => {
-  useEffect(()=>{
-    AOS.init({
-      duration: 600
-    })
-  },[])
 
   return (
     <>
