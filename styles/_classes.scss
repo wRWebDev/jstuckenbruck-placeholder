@@ -1,0 +1,77 @@
+//text
+.text-white { color: $white }
+.text-light { color: $light }
+.text-dark { color: $dark }
+.text-black { color: $black }
+.text-highlight { color: $highlight }
+.weight-light { font-weight: 300 }
+.weight-regular { font-weight: 400 } 
+.text-center { text-align: center }
+
+//backgrounds
+.bg-white { background-color: $white }
+.bg-light { background-color: $light }
+.bg-dark { background-color: $dark }
+.bg-black { background-color: $black }
+.bg-highlight { background-color: $highlight }
+
+//shapes
+.circle { 
+    border-radius: 50%; 
+    overflow: hidden;
+}
+.rounded { border-radius: 7px; }
+
+//buttons
+.btn-group{
+    margin: 0px -10px;
+}
+.btn {
+    padding: 6pt 15pt 8pt;
+    font-size: 1em;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 10px;
+    transition: ease 200ms all;
+    &:focus{
+        outline: none;
+    }
+}
+.btn-primary{
+    background: $highlight;
+    color: $white;
+    border: 2px solid $highlight;
+    &:hover,
+    &:focus{
+        filter: brightness(0.8);
+    }
+}
+.btn-secondary{
+    background: transparent;
+    color: $white;
+    border: 2px solid $white;
+    &:hover,
+    &:focus{
+        background: $white;
+        color: $dark;
+    }
+}
+
+//layout
+.flex { display: flex }
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.flex-wrap { flex-wrap: wrap; } 
+.flex-center { 
+    align-items: center; 
+    justify-content: center;
+}
+.flex-start { 
+    align-items: center; 
+    justify-content: flex-start;
+    @media only screen and (max-width: $MOBILE){
+        justify-content: center;
+    }
+}
+.full-width { width: 100%; }

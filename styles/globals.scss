@@ -1,0 +1,93 @@
+@import 'fonts';
+@import 'variables';
+@import 'classes';
+@import 'layout';
+@import 'aos';
+
+header{
+    min-height: 100vh;
+    .image{
+        width: 300px;
+        height: 300px;
+        margin: 20pt;
+        @media only screen and (max-width: calc(2 * #{$mobile-margin} + 300)){
+            width: 80vw;
+            height: 80vw;
+        }
+    }
+    .text{
+        margin: 20pt;
+        p{
+            margin-bottom: 10pt;
+        }
+
+        @media only screen and (max-width: $MOBILE){
+            text-align: center;
+        }
+    }
+    @media only screen and (max-width: $MOBILE){
+        flex-direction: column;
+    }
+}
+
+article{
+    position: relative;
+    columns: 2;
+    column-rule: $dark solid 1px;
+    column-gap: 60pt;
+    padding: calc(#{$section-padding} / 2) 0;
+    text-align: justify;
+    @media only screen and (max-width: $MOBILE){
+        columns: 1;
+    }
+
+    .quote{
+        margin: 0 0 2rem;
+        text-align: right;
+        font-style: italic;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 10pt 5%;
+        border-top: 1px solid rgba(0,0,0,0.5);
+        border-bottom: 1px solid rgba(0,0,0,0.5);
+    }
+}
+
+footer{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    .info{
+        text-align: right;
+        height: 243px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        ul{
+            margin-bottom: 15pt;
+            li{
+                margin: 0.2rem 0;
+            }
+        }
+
+        @media only screen and (max-width: $MOBILE){
+            margin-top: $section-padding;
+            width: 100%;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        h2{
+            margin-bottom: 3pt;
+        }
+        h4{
+            margin-bottom: 15pt;
+        }
+    }
+}

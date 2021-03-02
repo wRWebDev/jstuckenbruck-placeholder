@@ -1,0 +1,60 @@
+@import '../../styles/variables';
+
+.contactForm {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem 2rem;
+    width: 40%;
+    max-width: 900px;
+
+    @media only screen and (max-width: $MOBILE){
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    label{
+        font-family: $font-headings;
+        font-size: 0.8rem;
+        input, textarea{
+            font-family: $font-body;
+            border:none;
+            border-bottom: 1px solid $dark;
+            width: 100%;
+            margin: 3pt 0;
+            font-size: 1rem;
+            padding: 8pt 10pt;
+            border-radius: none;
+            background: transparent;
+            overflow-x: hidden;
+            &::placeholder{
+                font-style: italic;
+            }
+            &:focus{
+                outline: none;
+            };
+        }
+        textarea{
+            resize: none;
+        }
+
+    }
+
+    p{
+        text-align: center;
+        white-space: pre-line;
+    }
+
+    button{
+        background: $dark;
+        border: 2px solid $dark;
+        margin: 0;
+    }
+    
+}
+.doubleWidth{
+    grid-column: 1/3;
+    @media only screen and (max-width: $MOBILE){
+        grid-column: 1/2;
+    }
+}
