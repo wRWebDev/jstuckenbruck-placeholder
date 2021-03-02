@@ -14,7 +14,7 @@
 
 // import sendgrid sdk
 const sgMail = require('@sendgrid/mail')
-import { validate } from '../validation'
+import { validate } from '../../../lib/validation'
 
 export default async function(req, res){
     
