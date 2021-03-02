@@ -3,9 +3,9 @@
    - see https://swiperjs.com for more info.
 */
 
+@import '../variables';
 @import 'swiper-vars';
 @import 'swiper-navigation';
-@import '../variables';
 
 @font-face {
   font-family: 'swiper-icons';
@@ -24,9 +24,9 @@
   height: 100%;
   margin-left: 0;
   margin-right: 0;
+  padding: 0;
   overflow: hidden !important;
   list-style: none;
-  padding: 0;
   // /* Fix of Webkit flickering */
   z-index: 1;
 }

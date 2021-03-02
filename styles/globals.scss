@@ -55,6 +55,39 @@ article{
     }
 }
 
+#eventSwiperNext,
+#eventSwiperBack{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 20pt;
+    height: 20pt;
+    background: transparent;
+    z-index: 10;
+    transition: all ease 200ms;
+    &:hover{
+        border-color: $highlight;
+        cursor: pointer;
+    }
+    &.swiper-button-disabled{
+        opacity: 0;
+        cursor: default;
+    }
+}
+
+#eventSwiperBack{
+    left: -22px;
+    border-bottom: 2px solid $dark;
+    border-left: 2px solid $dark;
+}
+
+#eventSwiperNext{
+    right: -22px;
+    border-top: 2px solid $dark;
+    border-right: 2px solid $dark;
+}
+
+
 footer{
     position: relative;
     display: flex;
