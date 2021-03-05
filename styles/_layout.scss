@@ -33,7 +33,7 @@ h4 {
    margin-bottom: 5pt;
 }
 
-a:not(.anchor),
+a:not(.anchor, .social-media-links),
 h3 {
     position: relative;
     &::after{

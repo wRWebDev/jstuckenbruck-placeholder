@@ -1,5 +1,7 @@
 import reactStringReplace from 'react-string-replace'
 import { nanoid } from 'nanoid'
+import SocialMedia from '../SocialMedia'
+import { useEffect } from 'react'
 
 const bolden = string =>
     reactStringReplace(string, /\*+(.*?)\*+/mg, (match, i) => (
@@ -11,7 +13,6 @@ const emphasise = string =>
     ))
 
 const Biography = ({ biography }) => {
-
 
     const { quotes, body } = biography
     const paragraphs = body.split('\n\n')
@@ -42,6 +43,7 @@ const Biography = ({ biography }) => {
                             : quote(p)
                     })
                 }
+                <SocialMedia />
             </article>
         </main>
     )

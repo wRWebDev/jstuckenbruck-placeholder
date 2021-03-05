@@ -43,6 +43,43 @@ article{
         text-align: left;
     }
 
+    // Social media icons
+    #menu-socialMedia{
+        width: 100%;
+        margin-top: 10pt;
+        ul {
+            list-style: none;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            @media only screen and (max-width: $MOBILE){
+                align-items: center;
+                justify-content: center;
+            }
+
+            li {
+                // Resize svgs to 36x36px
+                .menu-socmed-icon {
+                    width: 36px;
+                    height: 36px;
+                    margin: 0 15px;
+                    cursor: pointer;
+
+                    @media only screen and (max-width: $MOBILE){
+                        margin: 0 15px;
+                    }
+
+                    // On hover edit fill color covered in 
+                    // /styles/scss/_rules.scss
+                    // This is so that it applies to the contact page also
+                }
+            }
+        }
+    }
+
     .quote{
         margin: 0 0 2rem;
         text-align: right;
@@ -138,5 +175,24 @@ footer{
         h5{
             font-weight: 300;
         }
+    }
+}
+
+svg:hover,
+svg:focus{
+    .facebook {
+        fill: #2a6fc9;
+    }
+    .instagram {
+        fill: #ca2d8c;
+    }
+    .instagram_lens {
+        fill: #8d1ea3;
+    }
+    .twitter {
+        fill: #2c88ff;
+    }
+    .youtube {
+        fill: #c61a1a;
     }
 }
