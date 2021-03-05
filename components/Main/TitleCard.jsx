@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useEffect } from 'react'
+import ScrollAnimation from '../ScrollAnimation'
 import AOS from 'aos'
 
 import * as Scroll from 'react-scroll'
@@ -48,8 +48,8 @@ const TitleCard = () => {
                         </button>
                     </ScrollLink>
                 </div>
-
             </div>
+            <ScrollAnimation />
         </header>
     )
 }
