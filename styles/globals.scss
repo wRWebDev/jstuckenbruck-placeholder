@@ -73,6 +73,10 @@ article{
         opacity: 0;
         cursor: default;
     }
+    @media only screen and (max-width: $MOBILE){
+        width: 10pt;
+        height: 10pt;
+    }
 }
 
 #eventSwiperBack{
@@ -92,8 +96,15 @@ footer{
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
+
+    #contactFormWrapper{
+        width: 50%;
+        @media only screen and (max-width: $MOBILE){
+            width: 100%;
+        }
+    }
     
     .info{
         text-align: right;

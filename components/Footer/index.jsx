@@ -12,7 +12,10 @@ const Footer = () => {
             >
             </ScrollElement>
             <footer className="flex flex-row flex-wrap">
-                <ContactForm />
+                <div id="contactFormWrapper">
+                    <h3>Contact</h3>
+                    <ContactForm />
+                </div>
                 <div className="info">
                     <div>
                         <h2 className="text-black">Johann Stuckenbruck</h2>
