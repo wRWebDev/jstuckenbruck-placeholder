@@ -16,7 +16,7 @@ const Biography = ({ biography }) => {
     const { quotes, body } = biography
     const paragraphs = body.split('\n\n')
     const quote = p => <>
-        <div className="quote" data-aos="fade-left" key={nanoid()}>
+        <div className="quote" key={nanoid()}>
             {quotes[0].quote}
             <h5>{`- ${quotes[0].source}`}</h5>
         </div>
@@ -28,8 +28,7 @@ const Biography = ({ biography }) => {
     return (
         <main>
             <h3 
-                tabIndex={3}
-                data-aos="fade-right"    
+                tabIndex={3}   
             >
                 Biography
             </h3>

@@ -48,7 +48,7 @@ const Events = () => {
 
     return (
         <section>
-            <h3 tabIndex={4} data-aos="fade-right">Schedule</h3>
+            <h3 tabIndex={4}>Schedule</h3>
             {
                 list.length < 1
                     ? <div style={{height: 600}} className="flex flex-center">Loading...</div>

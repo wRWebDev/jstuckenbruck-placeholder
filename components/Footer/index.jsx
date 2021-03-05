@@ -12,8 +12,8 @@ const Footer = () => {
             >
             </ScrollElement>
             <footer className="flex flex-row flex-wrap">
-                    <ContactForm />
-                <div className="info" data-aos="fade-left">
+                <ContactForm />
+                <div className="info">
                     <div>
                         <h2 className="text-black">Johann Stuckenbruck</h2>
                         <h4 className="text-black">Conductor</h4>
