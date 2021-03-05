@@ -47,6 +47,11 @@
 
         }
     }
+
+    @media only screen and (max-width: $MOBILE){
+        display: none;
+    }
+
 }
   
 @keyframes elasticus {
