@@ -3,6 +3,7 @@ import { socialMediaLinks } from '../../lib/socialMediaLinks'
 import { nanoid } from 'nanoid'
 import * as Scroll from 'react-scroll'
 let ScrollElement = Scroll.Link
+import Image from 'next/image'
 
 const Footer = () => {
     return (
@@ -49,6 +50,15 @@ const Footer = () => {
                             </a>
                         &nbsp;2021   
                     </h5>
+                </div>
+                <div className="flex flex-row flex-center" style={{height: 200, width: '100%', marginTop: 30}}>
+                    <Image 
+                        src={`${process.env.NEXT_PUBLIC_BUCKET}forbes.png`}
+                        width={256}
+                        height={200}
+                        layout="fixed"
+
+                    />
                 </div>
             </footer>
         </>
