@@ -92,7 +92,7 @@ const ContactForm = () => {
                 <label className={styles.doubleWidth}>
                     <textarea
                         rows={4}
-                        placeholder="message"
+                        placeholder="write johann a message"
                         value={message}
                         onChange={e=>setMessageTo(e.target.value)}
                     />
